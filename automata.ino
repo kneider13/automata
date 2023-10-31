@@ -38,6 +38,7 @@ void loop() {
     stop_robot();
     delay(1000);
     reverse_robot();
+    delay(1000);
   }
   if (left_sensor == 0 && right_sensor == 1) {
     robot_right(); 
