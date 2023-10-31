@@ -32,7 +32,7 @@ void setup() {
 
 void loop() {
 
-  read_left_sensor();
+  sensor_reading_IR();
 
   if (left_sensor == 0 && right_sensor == 0) {
     stop_robot();
@@ -51,7 +51,7 @@ void loop() {
 
 }
 
-void read_left_sensor()
+void sensor_reading_IR()
 {
   left_sensor = digitalRead(left_sensor_PIN); // Almacena la lectura del sensor izquierdo
   right_sensor = digitalRead(right_sensor_PIN); // Almacena la lectura del sensor derecho
